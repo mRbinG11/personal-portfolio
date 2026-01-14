@@ -513,7 +513,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 100px 0 100px 0;
 }
 .contact img {
   width: 92%;
@@ -584,4 +584,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 25px 0 20px 0;
+  background-image: url("./assets/img/footer-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer img {
+  width: 26%;
+}
+.footer p {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  justify-content: flex-end;
 }
