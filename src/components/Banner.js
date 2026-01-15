@@ -48,6 +48,13 @@ export const Banner = () => {
     }
   };
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -68,7 +75,7 @@ export const Banner = () => {
               growth opportunities & empowers individual creativity &
               development.
             </p>
-            <button onClick={() => console.log("connect")}>
+            <button onClick={() => scrollToSection("connect")}>
               Let's Connect <ArrowRightCircle size={25} />
             </button>
           </Col>

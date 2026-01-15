@@ -259,7 +259,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(
     90.21deg,
     rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(72, 46, 189, 0.502) 111.58%
+    rgba(74, 47, 189, 0.5) 111.58%
   );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
@@ -280,6 +280,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  text-align: justify;
 }
 .banner button {
   color: #fff;
@@ -315,6 +316,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+/************ Experience Css ************/
+.experience {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.exp-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.experience h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.exp-slider h4,
+.exp-slider h5 {
+  text-align: center;
+}
+.exp-slider .item ul li {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 11px 0 11px 0;
+  text-align: justify;
+  list-style-type: disc;
+}
+.exp-slider .item ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.exp-slider {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+.exp-slider .item {
+  width: 82%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
 }
 
 /************ Skills Css ************/
