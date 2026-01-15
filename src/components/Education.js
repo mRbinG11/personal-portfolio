@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { EducationCard } from "./EducationCard";
 
-const Education = () => {
+export const Education = () => {
   const educationData = [
     {
       school: "NITTE MEENAKSHI INSTITUTE OF TECHNOLOGY",
@@ -43,5 +43,3 @@ const Education = () => {
     </section>
   );
 };
-
-export default Education;

@@ -68,7 +68,7 @@ export const Banner = () => {
             </h1>
             <p>
               Accomplished PTC ThingWorx Developer with over 5 years of
-              experience, highly proficient in Node.js, Express.js, MongoDB, &
+              overall experience, highly proficient in Node.js, Express.js, MongoDB, &
               React.js. Seeking to completely transition into a full-stack
               development role to embrace new challenges & expand technical
               expertise. Eager to join an innovative organization that offers

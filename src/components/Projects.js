@@ -1,3 +1,5 @@
+import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
 import proj1Img from "../assets/img/qtify.png";
 import proj2Img from "../assets/img/xflix.png";
 import proj3Img from "../assets/img/qkart.png";
@@ -7,8 +9,6 @@ import proj6Img from "../assets/img/jukebox.png";
 import proj7Img from "../assets/img/qcontest.png";
 import proj8Img from "../assets/img/xcompany.png";
 import proj9Img from "../assets/img/ercica.webp";
-import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {

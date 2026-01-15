@@ -1,4 +1,4 @@
-import { Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
@@ -99,8 +99,15 @@ export const Experience = () => {
                   <ul>
                     <li>Working with PTC ThingWorx, Kepware & Sewio RTLS.</li>
                     <li>
-                      Recipient of the <a href={certPDF}>WIN Star Award</a> for
-                      independently spearheading application development &
+                      Recipient of the{" "}
+                      <a
+                        href={certPDF}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        WIN Star Award
+                      </a>{" "}
+                      for independently spearheading application development &
                       testing efforts, consistently ensuring on time &
                       high-quality delivery of critical customer projects.
                     </li>
