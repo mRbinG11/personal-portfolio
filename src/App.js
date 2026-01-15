@@ -7,6 +7,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Experience } from "./components/Experience";
+import Education from "./components/Education";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavBar />
       <Banner />
       <Experience />
+      <Education />
       <Skills />
       <Projects />
       <Contact />
