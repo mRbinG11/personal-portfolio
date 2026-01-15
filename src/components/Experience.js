@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import TrackVisibility from "react-on-screen";
 import colorSharp from "../assets/img/color-sharp.png";
 import certPDF from "../assets/PDFs/WIN_Certificate.pdf";
 
@@ -30,7 +31,17 @@ export const Experience = () => {
         <Row>
           <Col>
             <div className="exp-bx">
-              <h2>Work Experience</h2>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__headShake" : ""
+                    }
+                  >
+                    <h2>Work Experience</h2>
+                  </div>
+                )}
+              </TrackVisibility>
               <Carousel
                 responsive={responsive}
                 infinite={true}

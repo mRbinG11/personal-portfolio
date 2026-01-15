@@ -9,6 +9,7 @@ import { Experience } from "./components/Experience";
 import { Education } from "./components/Education";
 import { Certifications } from "./components/Certifications";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "animate.css";
 
 function App() {
   return (

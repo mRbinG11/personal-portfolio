@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import TrackVisibility from "react-on-screen";
 import percent40 from "../assets/img/40-percent.png";
 import percent60 from "../assets/img/60-percent.png";
 import percent80 from "../assets/img/80-percent.png";
@@ -31,8 +32,20 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
-              <p>Here are some of my technical skills and proficiencies:</p>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__flash" : ""
+                    }
+                  >
+                    <h2>Skills</h2>
+                    <p>
+                      Here are some of my technical skills and proficiencies:
+                    </p>
+                  </div>
+                )}
+              </TrackVisibility>
               <Carousel
                 responsive={responsive}
                 infinite={true}

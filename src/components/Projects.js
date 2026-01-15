@@ -1,4 +1,5 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 import { ProjectCard } from "./ProjectCard";
 import proj1Img from "../assets/img/qtify.png";
 import proj2Img from "../assets/img/xflix.png";
@@ -93,8 +94,18 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>Here are some of my recent projects:</p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__slideInDown" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>Here are some of my recent projects:</p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"

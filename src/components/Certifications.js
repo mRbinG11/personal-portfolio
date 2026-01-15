@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 import { CertificationCard } from "./CertificationCard";
 import cert1 from "../assets/PDFs/Programming_for_Data_Science.pdf";
 import cert2 from "../assets/PDFs/Microsoft_Certified_Azure_AI_Fundamentals.pdf";
@@ -38,7 +39,15 @@ export const Certifications = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Certifications</h2>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={isVisible ? "animate__animated animate__tada" : ""}
+                >
+                  <h2>Certifications</h2>
+                </div>
+              )}
+            </TrackVisibility>
             <Row>
               {certs.map((cert, index) => {
                 return <CertificationCard key={index} {...cert} />;

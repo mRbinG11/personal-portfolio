@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
 import { EducationCard } from "./EducationCard";
 
 export const Education = () => {
@@ -31,12 +32,22 @@ export const Education = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Education</h2>
-            <Row>
-              {educationData.map((eduItem, index) => {
-                return <EducationCard key={index} {...eduItem} />;
-              })}
-            </Row>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__pulse" : ""
+                  }
+                >
+                  <h2>Education</h2>
+                  <Row>
+                    {educationData.map((eduItem, index) => {
+                      return <EducationCard key={index} {...eduItem} />;
+                    })}
+                  </Row>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

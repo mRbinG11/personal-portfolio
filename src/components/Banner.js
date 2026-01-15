@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import TrackVisibility from "react-on-screen";
 import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
@@ -13,7 +14,7 @@ export const Banner = () => {
     "Software Engineer",
     "ThingWorx Developer",
   ];
-  const period = 2000;
+  const period = 750;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -60,24 +61,34 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              {`Hi! I'm Sujith `}
-              <br></br>
-              <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              Accomplished PTC ThingWorx Developer with over 5 years of
-              overall experience, highly proficient in Node.js, Express.js, MongoDB, &
-              React.js. Seeking to completely transition into a full-stack
-              development role to embrace new challenges & expand technical
-              expertise. Eager to join an innovative organization that offers
-              growth opportunities & empowers individual creativity &
-              development.
-            </p>
-            <button onClick={() => scrollToSection("connect")}>
-              Let's Connect <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__shakeY" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi! I'm Sujith `}
+                    <br></br>
+                    <span className="wrap">{text}</span>
+                  </h1>
+                  <p>
+                    Accomplished PTC ThingWorx Developer with over 5 years of
+                    overall experience, highly proficient in Node.js,
+                    Express.js, MongoDB, & React.js. Seeking to completely
+                    transition into a full-stack development role to embrace new
+                    challenges & expand technical expertise. Eager to join an
+                    innovative organization that offers growth opportunities &
+                    empowers individual creativity & development.
+                  </p>
+                  <button onClick={() => scrollToSection("connect")}>
+                    Let's Connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Banner" />
