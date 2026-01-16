@@ -95,7 +95,7 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               href="#connect"
               className={
                 activeLink === "connect" ? "active navbar-link" : "navbar-link"
@@ -103,23 +103,26 @@ export const NavBar = () => {
               onClick={() => onUpdateActiveLink("connect")}
             >
               Contact
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/mrbing11">
+              <a href="https://www.linkedin.com/in/mrbing11" title="LinkedIn">
                 <img src={navIcon1} alt="LinkedIn" />
               </a>
-              <a href="https://github.com/mRbinG11">
+              <a href="https://github.com/mRbinG11" title="GitHub">
                 <img src={navIcon2} alt="GitHub" />
               </a>
-              <a href="https://crio.do/user/mRbinG11">
+              <a href="https://crio.do/user/mRbinG11" title="Crio.Do">
                 <img src={navIcon4} alt="Crio.Do" />
               </a>
-              <a href="https://www.instagram.com/mr.bing4lyf/">
+              <a
+                href="https://www.instagram.com/mr.bing4lyf/"
+                title="Instagram"
+              >
                 <img src={navIcon3} alt="Instagram" />
               </a>
-              <a href={resumePDF}>
+              <a href={resumePDF} title="Resume PDF">
                 <img src={navIcon5} alt="Resume PDF" />
               </a>
             </div>
