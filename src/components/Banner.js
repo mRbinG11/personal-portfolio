@@ -83,9 +83,9 @@ export const Banner = () => {
                     innovative organization that offers growth opportunities &
                     empowers individual creativity & development.
                   </p>
-                  <button onClick={() => scrollToSection("connect")}>
+                  {/* <button onClick={() => scrollToSection("connect")}>
                     Let's Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>
