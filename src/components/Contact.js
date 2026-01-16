@@ -4,8 +4,8 @@ import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
-  const serverUrl = process.env.SERVER_URL || "http://localhost";
-  const port = process.env.PORT || 5000;
+  const serverUrl = process.env.REACT_APP_SERVER_URL || "http://localhost";
+  const port = process.env.REACT_APP_PORT || 5000;
 
   const formInitialDetails = {
     firstName: "",
