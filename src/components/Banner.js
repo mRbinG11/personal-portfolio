@@ -69,26 +69,26 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    {`Hi! I'm Sujith `}
-                    <br></br>
-                    <span className="wrap">{text}</span>
-                  </h1>
-                  <p>
-                    Accomplished PTC ThingWorx Developer with over 5 years of
-                    overall experience, highly proficient in Node.js,
-                    Express.js, MongoDB, & React.js. Seeking to completely
-                    transition into a full-stack development role to embrace new
-                    challenges & expand technical expertise. Eager to join an
-                    innovative organization that offers growth opportunities &
-                    empowers individual creativity & development.
-                  </p>
-                  {/* <button onClick={() => scrollToSection("connect")}>
-                    Let's Connect <ArrowRightCircle size={25} />
-                  </button> */}
                 </div>
               )}
             </TrackVisibility>
+            <h1>
+              {`Hi! I'm Sujith `}
+              <br></br>
+              <span className="wrap">{text}</span>
+            </h1>
+            <p>
+              Accomplished PTC ThingWorx Developer with over 5 years of overall
+              experience, highly proficient in Node.js, Express.js, MongoDB, &
+              React.js. Seeking to completely transition into a full-stack
+              development role to embrace new challenges & expand technical
+              expertise. Eager to join an innovative organization that offers
+              growth opportunities & empowers individual creativity &
+              development.
+            </p>
+            {/* <button onClick={() => scrollToSection("connect")}>
+                    Let's Connect <ArrowRightCircle size={25} />
+                  </button> */}
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Banner" />

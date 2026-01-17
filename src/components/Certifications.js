@@ -45,14 +45,14 @@ export const Certifications = () => {
                   className={isVisible ? "animate__animated animate__tada" : ""}
                 >
                   <h2>Certifications</h2>
-                  <Row>
-                    {certs.map((cert, index) => {
-                      return <CertificationCard key={index} {...cert} />;
-                    })}
-                  </Row>
                 </div>
               )}
             </TrackVisibility>
+            <Row>
+              {certs.map((cert, index) => {
+                return <CertificationCard key={index} {...cert} />;
+              })}
+            </Row>
           </Col>
         </Row>
       </Container>

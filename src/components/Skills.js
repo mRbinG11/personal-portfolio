@@ -31,52 +31,52 @@ export const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__flash" : ""
-                  }
-                >
-                  <div className="skill-bx">
+            <div className="skill-bx">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__flash" : ""
+                    }
+                  >
                     <h2>Skills</h2>
                     <p>
                       Here are some of my technical skills and proficiencies:
                     </p>
-                    <Carousel
-                      responsive={responsive}
-                      infinite={true}
-                      className="skill-slider"
-                    >
-                      <div className="item">
-                        <img src={percent60} alt="JavaScript" />
-                        <h5>JavaScript</h5>
-                      </div>
-                      <div className="item">
-                        <img src={percent60} alt="Node.js" />
-                        <h5>Node.js</h5>
-                      </div>
-                      <div className="item">
-                        <img src={percent60} alt="React.js" />
-                        <h5>React.js</h5>
-                      </div>
-                      <div className="item">
-                        <img src={percent40} alt="Express.js" />
-                        <h5>Express.js</h5>
-                      </div>
-                      <div className="item">
-                        <img src={percent60} alt="SQL" />
-                        <h5>SQL</h5>
-                      </div>
-                      <div className="item">
-                        <img src={percent80} alt="PTC ThingWorx" />
-                        <h5>PTC ThingWorx</h5>
-                      </div>
-                    </Carousel>
                   </div>
+                )}
+              </TrackVisibility>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="skill-slider"
+              >
+                <div className="item">
+                  <img src={percent60} alt="JavaScript" />
+                  <h5>JavaScript</h5>
                 </div>
-              )}
-            </TrackVisibility>
+                <div className="item">
+                  <img src={percent60} alt="Node.js" />
+                  <h5>Node.js</h5>
+                </div>
+                <div className="item">
+                  <img src={percent60} alt="React.js" />
+                  <h5>React.js</h5>
+                </div>
+                <div className="item">
+                  <img src={percent40} alt="Express.js" />
+                  <h5>Express.js</h5>
+                </div>
+                <div className="item">
+                  <img src={percent60} alt="SQL" />
+                  <h5>SQL</h5>
+                </div>
+                <div className="item">
+                  <img src={percent80} alt="PTC ThingWorx" />
+                  <h5>PTC ThingWorx</h5>
+                </div>
+              </Carousel>
+            </div>
           </Col>
         </Row>
       </Container>
