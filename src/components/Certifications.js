@@ -4,6 +4,7 @@ import { CertificationCard } from "./CertificationCard";
 import cert1 from "../assets/PDFs/Programming_for_Data_Science.pdf";
 import cert2 from "../assets/PDFs/Microsoft_Certified_Azure_AI_Fundamentals.pdf";
 import cert3 from "../assets/PDFs/ThingWorx_Associate_Certification.pdf";
+import cert4 from "../assets/PDFs/CrioCertificate.pdf";
 
 export const Certifications = () => {
   const certs = [
@@ -20,7 +21,7 @@ export const Certifications = () => {
     {
       title: "Fellowship Advanced Full Stack (React + Node.js)",
       issuer: "Crio.Do",
-      link: "https://www.crio.do/learn/portfolio/sujithbhat97/",
+      link: { href: cert4 },
     },
     {
       title: "ThingWorx Associate Certification",
