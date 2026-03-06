@@ -79,13 +79,13 @@ export const Banner = () => {
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Accomplished PTC ThingWorx Developer with over 5 years of overall
+              Accomplished PTC ThingWorx Developer with around 3 years of
               experience, highly proficient in Node.js, Express.js, MongoDB, &
-              React.js. Seeking to completely transition into a full-stack
-              development role to embrace new challenges & expand technical
-              expertise. Eager to join an innovative organization that offers
-              growth opportunities & empowers individual creativity &
-              development.
+              React.js with over 2 years of experience. Seeking to completely
+              transition into a full-stack development role to embrace new
+              challenges & expand technical expertise. Eager to join an
+              innovative organization that offers growth opportunities &
+              empowers individual creativity & development.
             </p>
             {/* <button onClick={() => scrollToSection("connect")}>
                     Let's Connect <ArrowRightCircle size={25} />

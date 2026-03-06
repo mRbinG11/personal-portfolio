@@ -52,29 +52,35 @@ export const Experience = () => {
                   <h5>MICROLAND LTD | April 2023 - March 2026</h5>
                   <ul>
                     <li>
-                      Working with PTC ThingWorx, Kepware, PostgreSQL, MS SQL,
-                      Node.js, React.js & Express.js.
+                      Working with MS SQL, Node.js, React.js, Express.js, PTC
+                      ThingWorx, Kepware & PostgreSQL.
                     </li>
                     <li>
-                      Driving end-to-end project success by translating customer
-                      requirements into innovative & scalable software
-                      solutions.
+                      Designed and implemented reusable React components to
+                      streamline development and maintain consistency across
+                      applications.
                     </li>
                     <li>
-                      Leading a cross-functional team to deliver high-quality
-                      project outcomes through effective planning,
-                      collaboration, & technical excellence.
+                      Applied React hooks and Context API for efficient state
+                      management in complex applications.
                     </li>
                     <li>
-                      Led the design & implementation of comprehensive data &
-                      IoT device models, enhancing system interoperability, data
-                      accuracy, & scalability to support complex project
-                      requirements.
+                      Developed dynamic front-end features such as interactive
+                      dashboards, forms, and real-time data rendering.
                     </li>
                     <li>
-                      Developed customized mashups, user interfaces, & detailed
-                      reports tailored to diverse business use cases, enhancing
-                      data visualization & decision-making capabilities.
+                      Integrated React applications with RESTful APIs, enabling
+                      smooth communication between front-end and back-end
+                      services.
+                    </li>
+                    <li>
+                      Enhanced application performance through code splitting,
+                      lazy loading, and component optimization.
+                    </li>
+                    <li>
+                      Collaborated with cross-functional teams to deliver
+                      full-stack solutions, connecting React front-end with
+                      Thingworx back-end services.
                     </li>
                   </ul>
                 </div>
