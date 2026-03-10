@@ -52,8 +52,8 @@ export const Experience = () => {
                   <h5>MICROLAND LTD | April 2023 - March 2026</h5>
                   <ul>
                     <li>
-                      Working with MS SQL, Node.js, React.js, Express.js, PTC
-                      ThingWorx, Kepware & PostgreSQL.
+                      Working with MS SQL, React.js, PTC ThingWorx, Kepware &
+                      PostgreSQL.
                     </li>
                     <li>
                       Designed and implemented reusable React components to

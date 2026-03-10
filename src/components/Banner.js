@@ -79,9 +79,9 @@ export const Banner = () => {
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Accomplished PTC ThingWorx Developer with around 3 years of
-              experience, highly proficient in Node.js, Express.js, MongoDB, &
-              React.js with over 2 years of experience. Seeking to completely
+              Accomplished developer with more than 5 years of development
+              experience, highly proficient in React.js, Node.js, Express.js &
+              MongoDB with around 3 years of experience. Seeking to completely
               transition into a full-stack development role to embrace new
               challenges & expand technical expertise. Eager to join an
               innovative organization that offers growth opportunities &
